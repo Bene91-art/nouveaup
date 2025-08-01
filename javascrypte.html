@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF‑8">
+  <meta name="viewport" content="width=device-width,initial‑scale=1.0">
+  <title>Leçon JavaScript – LearnZone</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>📘 LearnZone – Leçon JavaScript</h1>
+    <nav>
+      <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+      <a href="lesson.html"><i class="fas fa-book-open"></i> Leçons</a>
+    </nav>
+  </header>
+
+  <main class="lesson-content">
+    <h2>💻 JavaScript de A à Z</h2>
+
+    <section>
+      <h3>1. Introduction</h3>
+      <p>JavaScript ajoute de l’interactivité à tes pages HTML : répondre aux clics, modifier le contenu, valider un formulaire…</p>
+    </section>
+
+    <section>
+      <h3>2. Variables & types</h3>
+      <pre><code>let nom = "Alice";
+const age = 30;
+let estActif = true;</code></pre>
+      <p>Types : string, number, boolean, undefined, null, array, object.</p>
+    </section>
+
+    <section>
+      <h3>3. Conditions</h3>
+      <pre><code>if (age >= 18) {
+  console.log("Majeur");
+} else {
+  console.log("Mineur");
+}</code></pre>
+      <p>Tu peux utiliser aussi <code>switch</code> pour tester plusieurs cas.</p>
+    </section>
+
+    <section>
+      <h3>4. Boucles</h3>
+      <pre><code>for (let i = 0; i < 5; i++) { console.log(i); }
+
+while (i < 5) { ... }
+
+for (const item of tableau) { ... }</code></pre>
+      <cite>Selon MDN, JavaScript prend en charge <code>for</code>, <code>while</code>, <code>do...while</code>, <code>for...of</code>, etc. 4</cite>
+    </section>
+
+    <section>
+      <h3>5. Fonctions</h3>
+      <pre><code>function carre(n) { return n * n; }
+
+const carre2 = n => n * n;</code></pre>
+      <p>Fonctions classiques ou fléchées, scope, paramètres et <code>return</code>. 5</p>
+    </section>
+
+    <section>
+      <h3>6. Tableaux & objets</h3>
+      <pre><code>const fruits = ["pomme", "banane"];
+const personne = { nom: "Alice", age: 30 };</code></pre>
+      <p>Tu peux boucler sur un tableau, accéder à des propriétés, etc.</p>
+    </section>
+
+    <section>
+      <h3>7. DOM – Manipulation HTML</h3>
+      <pre><code>document.getElementById('monId').textContent = "Hello";
+document.querySelector('.maClasse').style.color = "red";</code></pre>
+      <p>Le DOM permet de modifier dynamiquement la page HTML. 6</p>
+    </section>
+
+    <section>
+      <h3>8. Événements</h3>
+      <pre><code>document.querySelector('button').addEventListener('click', () => {
+  alert("Tu as cliqué !");
+});</code></pre>
+      <p>Tu apprends aussi les notions de propagation, <code>this</code>, <code>event</code>.</p>
+    </section>
+
+    <section>
+      <h3>9. JSON & fetch (réseau)</h3>
+      <pre><code>fetch('data.json')
+  .then(res => res.json())
+  .then(data => console.log(data));</code></pre>
+      <p>Permet de charger des données externes. Base des API REST.</p>
+    </section>
+
+    <section>
+      <h3>10. Bonnes pratiques & exercices</h3>
+      <ul>
+        <li>Déclare toujours tes variables avec <code>let</code> ou <code>const</code></li>
+        <li>Ne mets pas de logique dans les balises HTML (onclick), préfères le JS événementiel</li>
+        <li>Utilise la console du navigateur pour voir les erreurs</li>
+      </ul>
+      <p>🛠 Exercices :</p>
+      <ol>
+        <li>Créer un bouton qui compte les clics</li>
+        <li>Afficher la liste des fruits dans un <code>&lt;ul&gt;</code></li>
+        <li>Changer le contenu d’un élément après 5 secondes</li>
+      </ol>
+    </section>
+
+    <a href="lesson.html" class="btn">⬅ Retour aux leçons</a>
+    <a href="ressources.html" class="btn"> Accedez aux ressources</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 LearnZone. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>

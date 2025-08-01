@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF‑8">
+  <meta name="viewport" content="width=device-width,initial‑scale=1.0">
+  <title>Leçon CSS Complète – LearnZone</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <h1>📘 LearnZone – Leçon CSS Complète</h1>
+  <nav>
+    <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+    <a href="lesson.html"><i class="fas fa-book-open"></i> Leçons</a>
+  </nav>
+</header>
+
+<main class="lesson-content">
+  <h2>🎨 CSS en profondeur</h2>
+
+  <section>
+    <h3>1. Qu’est‑ce que le CSS ?</h3>
+    <p>Le CSS signifie Cascading Style Sheets. Il sépare le contenu (HTML) de la présentation
+    (styles visuels), permettant de contrôler couleurs, typographie, disposition, animations…</p>
+  </section>
+
+  <section>
+    <h3>2. Sélecteurs CSS avancés</h3>
+    <p>Tu connais les classes (<code>.maClasse</code>) et identifiants (<code>#monId</code>).
+    Mais voici des sélecteurs plus puissants :</p>
+    <ul>
+      <li><code>div > p</code> : enfant direct</li>
+      <li><code>ul li:first-child</code> : premier élément d'une liste</li>
+      <li><code>a[href^="#"]</code> : attribut qui commence par #</li>
+      <li><code>:hover</code>, <code>:focus</code>, <code>:nth-child(odd)</code></li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>3. Couleurs & polices</h3>
+    <p>Exemples :</p>
+    <pre><code>
+body { color: #333; background-color: #f9f9f9; }
+h1 { font-family: 'Segoe UI', sans-serif; font-size: 2.5rem; }
+</code></pre>
+    <p>Tu peux utiliser : noms (blue), hex (#007BFF), RGB/A (rgba(...)), HSL/A.</p>
+  </section>
+
+  <section>
+    <h3>4. Le modèle de boîte (Box Model)</h3>
+    <p>Tout élément HTML est une boîte : contenu, padding, border, margin :</p>
+    <pre><code>
+.box {
+  width: 200px;
+  padding: 10px;
+  border: 2px solid #0056b3;
+  margin: 20px;
+}
+</code></pre>
+    <p>Utilise <code>box-sizing: border-box</code> souvent pour inclure paddings dans la largeur.</p>
+  </section>
+
+  <section>
+    <h3>5. Flexbox — Disposition flexible</h3>
+    <p>Flexbox facilite l’alignement :</p>
+    <pre><code>
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flex-item {
+  flex: 1 1 200px;
+}
+</code></pre>
+    <p>Exemple : centrer horizontalement & verticalement.</p>
+  </section>
+
+  <section>
+    <h3>6. Grid Layout — Grilles CSS</h3>
+    <pre><code>
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.item1 { grid-column: span 2; }
+</code></pre>
+    <p>Grid permet une mise en page complexe : colonnes réglables, zones, gaps.</p>
+  </section>
+
+  <section>
+    <h3>7. Positionnement & affichage</h3>
+    <ul>
+      <li><code>position: static | relative | absolute | fixed | sticky;</code></li>
+      <li><code>display: none | block | inline | inline-block</code></li>
+      <li><code>z-index</code> pour gérer la superposition.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>8. Transitions & Animations</h3>
+    <p>Smooth hover :</p>
+    <pre><code>.btn { transition: background-color 0.3s; }
+.btn:hover { background-color: #ff6f00; }
+</code></pre>
+    <p>Animation complète :</p>
+    <pre><code>
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+.pulse { animation: pulse 2s ease-in-out infinite; }
+</code></pre>
+  </section>
+
+  <section>
+    <h3>9. Media Queries & responsive</h3>
+    <pre><code>
+@media (max-width: 600px) {
+  .lesson-grid { grid-template-columns: 1fr; }
+  h1 { font-size: 1.8rem; }
+}
+</code></pre>
+    <p>Permet d’adapter le site aux mobiles & tablettes.</p>
+  </section>
+
+  <section>
+    <h3>10. Meilleures pratiques</h3>
+    <ul>
+      <li>Organise ton CSS : regroupes les sélecteurs par section.</li>
+      <li>Utilise des classes significatives.</li>
+      <li>Évite les styles en ligne.</li>
+      <li>Teste l’accessibilité (contraste, taille de police…)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>🔧 Exercices pratiques</h3>
+    <ul>
+      <li>Crée une carte CSS stylée (couleur, padding, arrondi).</li>
+      <li>Fais une mise en page avec Flexbox pour centrer un élément.</li>
+      <li>Crée une petite grille avec 3 colonnes et du gap avec Grid.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>🔗 Ressources recommandées</h3>
+    <ul>
+      <li>MDN Web Docs pour CSS</li>
+      <li>CSS-Tricks pour tutos avancés</li>
+      <li>Flexbox Froggy / Grid Garden (jeux interactifs)</li>
+    </ul>
+  </section>
+
+  <a href="lesson.html" class="btn">⬅ Retour aux leçons</a>
+  <a href="ressources.html" class="btn"> Accedez aux ressources</a>
+</main>
+
+<footer>
+  <p>&copy; 2025 LearnZone. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF‑8">
+  <meta name="viewport" content="width=device-width, initial‑scale=1.0">
+  <title>Leçon Python – LearnZone</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <h1>📘 LearnZone – Leçon Python</h1>
+  <nav>
+    <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+    <a href="lessons.html"><i class="fas fa-book-open"></i> Leçons</a>
+  </nav>
+</header>
+
+<main class="lesson-content">
+  <h2>🐍 Apprendre Python</h2>
+
+  <section>
+    <h3>1. Présentation</h3>
+    <p>Python est un langage interprété, très lisible, utilisé en web, data, IA, scripting, etc. Il privilégie la simplicité du code.</p>
+   
+  </section>
+
+  <section>
+    <h3>2. Variables & Types</h3>
+     <p>Les types de variables
+<h4>Définition</h4>
+Le type d’une variable correspond à la nature de celle-ci. Les trois principaux types dont nous aurons besoin dans
+un premier temps sont les entiers (integer ou int), les nombres décimaux que nous appellerons floats et les chaînes de
+caractères (string ou str).
+Bien sûr, il existe de nombreux autres types (par exemple, les booléens, les nombres complexes, etc.).
+    </p>
+    <pre><code>nom = "Alice"
+age = 25
+est_actif = True
+pi = 3.14
+
+</code></pre>
+    <p>Types : <code>str</code>, <code>int</code>, <code>float</code>, <code>bool</code>, et <code>None</code>.</p>
+  </section>
+
+  <section>
+    <h3>3. Conditions</h3>
+    <pre><code>if age > 18:
+    print("Adulte")
+elif age == 18:
+    print("Juste majeur")
+else:
+    print("Mineur")</code></pre>
+  </section>
+
+  <section>
+    <h3>4. Boucles</h3>
+    <pre><code>for i in range(5):
+    print(i)
+
+i = 0
+while i < 5:
+    print("Tour", i)
+    i += 1</code></pre>
+  </section>
+
+  <section>
+    <h3>5. Fonctions</h3>
+    <pre><code>def carre(n):
+    return n * n
+
+print(carre(4))</code></pre>
+    <p>Paramètres, valeurs de retour, documentation.</p>
+  </section>
+
+  <section>
+    <h3>6. Listes, Tuples, Dictionnaires</h3>
+    <pre><code>fruits = ["pomme", "banane"]
+personne = {"nom": "Alice", "age": 25}
+coord = (10, 20)</code></pre>
+    <p>Méthodes utiles : <code>append</code>, <code>len</code>, indexation, itérations.</p>
+  </section>
+
+  <section>
+    <h3>7. Entrées utilisateur</h3>
+    <pre><code>nom = input("Ton nom ? ")
+print(f"Bonjour {nom}!")</code></pre>
+    <p>Le formatage peut utiliser les f-strings :</p>
+    <pre><code>age = 30
+print(f"{nom} a {age} ans")</code></pre>
+  </section>
+
+  <section>
+    <h3>8. Fichiers</h3>
+    <pre><code>with open("data.txt", "w") as f:
+    f.write("Salut !")
+
+with open("data.txt") as f:
+    print(f.read())</code></pre>
+  </section>
+
+  <section>
+    <h3>9. Modules & Librairies</h3>
+    <p>Importe des modules (exemple standard ou tiers) :</p>
+    <pre><code>import math
+from datetime import datetime
+import requests  # pip install requests</code></pre>
+    <p>Utilisation courante : <code>math.sqrt</code>, <code>datetime.now()</code>.</p>
+  </section>
+
+  <section>
+    <h3>10. Exercices & Bonnes pratiques</h3>
+    <ul>
+      <li>Essayes une mini calculatrice console</li>
+      <li>Manipule un dictionnaire de notes</li>
+      <li>Lis & écris dans un fichier texte</li>
+      <li>Modularise ton code avec des fonctions</li>
+    </ul>
+    <p>💡 Bonnes pratiques :</p>
+    <ul>
+      <li>Respecte l’indentation (4 espaces)</li>
+      <li>Choisis des noms clairs</li>
+      <li>Commente ton code</li>
+      <li>Teste les exceptions si besoin (<code>try/except</code>)</li>
+    </ul>
+  </section>
+
+  <a href="lesson.html" class="btn">⬅ Retour aux leçons</a>
+  <a href="ressources.html" class="btn"> Accedez aux ressources</a>
+</main>
+ 
+<footer>
+  <p>&copy; 2025 LearnZone. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
+</html>
